@@ -24,8 +24,7 @@ public:
             }
             temp = temp->next;
         }
-        if(list1) temp->next = list1;
-        if(list2) temp->next = list2;
+        temp->next = (list1 != NULL) ? list1 : list2;
         
         return dummyHead -> next;
     }
